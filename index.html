@@ -1,8 +1,34 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="graphos/estilox.css">
 	<title>inicio</title>
+
+
+
+	<title> PASA ADELANTE SOLO SI TIENES USUARIO... GRACIAS</title>
+	<script>
+		function comprobarClave(){
+			clave1 = document.f1.clave1.value
+			clave2 = document.f1.clave2.value
+
+
+			if (clave1 == "Angie" && clave2 == "Santos"){
+			alert("los datos coinciden ...\n Pase adelante");
+			var href ="pag.html";
+			window.location=href;
+    }
+
+    else{ 
+    	alert("las dos claves son distintas...\n intente nuevamente.");
+    	var href = "index.html";
+    	window.location=href;
+    };
+
+  }
+</script>
+	
 </head>
 <body>
 <header>Angie´s Academy 
@@ -20,61 +46,35 @@
 
 
 
-
-
-<nav  id="menu"  >
-
+<section>
 
     <ul id="ul1">
-   
-
-</a></li>
-
-    <li class="li1" ><a href="index.html" style="text-decoration: none">Inicio</a></li>
-    <li class="li1"><a href="aboutme.html"style="text-decoration: none"> Acerca de nosotros</a></li> 
-    <li class="li1"><a href="produ.html"style="text-decoration: none"> Servicios</a></li> 
-     <li class ="li1"><a href="Contactanos.html"style="text-decoration: none">Contactanos</a></li> 
-</ul>   
-</nav> 
+   <h1> VALIDAR SOLO SI EL USUARIO Y CONTRASEÑA COINCIDEN</h1>
+   <h2>clave1: Angie </h2>
+   <h2>Clave2: Santos</h2>
+	<br>
+	escribe una supuesta contraseña dos veces una en cada campo, y pulsa el boton. JavaScript te dira si las dos son iguales.
 
 
 
+	
 
+	<br>
+	<form action="" name="f1" style="text-align: center;text-indent: unset; ">
+		USUARIO: <input type="password" name ="clave1" size="20">
+		<br>
+		PON TU CLAVE:  <input type="password" name ="clave2" size="20">
+		<br>
+		<br>
+		<input type="button" value=" VERIFICAR "  onclick="comprobarClave()  " >
 
+	</form>
 
-<aside id="aside1"><p>
-You can contact us through our facebook page. We will attend you with all happiness. We hape to be of your pleasantless. </p>
-<nav>
-
-</div>		
-<button><a href="https://www.facebook.com/Angies-Academy-107170384337985" id="bo1" style="text-decoration: none; color: black"> Facebook </a>   </button>
-</aside>
-
-
-
-
-
-
-
-
-<section>
-	<img src="imagen clase.png" width="300" height="250" id="logoblanco" align="center">
-	<article id="mision">
-		<h2>Misión</h2>
-		<p>Nuestra misión es poder enseñar a todos los jóvenes y adultos una estrategia fácil, rápida y eficaz de aprender inglés. Nuestro mayor objetivo es hacer de sus futuros mejor y que puedan destacar para conseguir mayores oportunidades laborales y así tener un futuro más comprometedor y con estabilidad.</p>
-
-
-	</article>
-	<article id="vision">
-		<h2>Visión</h2>
-		<p>Llegar a tocar las vidas de las personas, ayudándoles y proveyéndoles los medios necesarios para que obtengan una fuente de conocimiento confiable y que sean capaces de transmitirlo y demostrarlo.  </p>
-		
-	</article>
-	<article id="Lema">
-		<h2>Lema</h2>
-		<p> "Enseñar es tocar la vida de alguien para siempre"</p>
-	</article>
 </section>
+
+
+
+
 
 
 <footer><p>Derechos reservados 11 de septiembre del 2020 ciudad de Guatemala, Hecho por Angelli R. Santos
